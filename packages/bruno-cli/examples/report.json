@@ -299,7 +299,7 @@
         "method": "POST",
         "url": "http://localhost:3000/test",
         "headers": {
-          "content-type": "text/xml"
+          "content-type": "application/xml"
         },
         "data": "<xml>\n  <test>1</test>\n</xml>"
       },

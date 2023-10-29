@@ -83,7 +83,7 @@ const prepareRequest = (request, collectionRoot) => {
 
   if (request.body.mode === 'xml') {
     if (!contentTypeDefined) {
-      axiosRequest.headers['content-type'] = 'text/xml';
+      axiosRequest.headers['content-type'] = 'application/xml';
     }
     axiosRequest.data = request.body.xml;
   }

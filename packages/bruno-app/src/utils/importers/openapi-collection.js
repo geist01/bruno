@@ -177,7 +177,7 @@ const transformOpenapiRequestItem = (request) => {
     } else if (mimeType === 'text/plain') {
       brunoRequestItem.request.body.mode = 'text';
       brunoRequestItem.request.body.text = '';
-    } else if (mimeType === 'text/xml') {
+    } else if (mimeType === 'text/xml' || mimeType === 'application/xml') {
       brunoRequestItem.request.body.mode = 'xml';
       brunoRequestItem.request.body.xml = '';
     }
